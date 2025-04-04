@@ -10,17 +10,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="./img/logo.gif">
+    <img src="./img/logo.gif" alt="Logo DevClub">
 
     <div>
         <h1>DevClub Convert Money</h1>
 
-        <input placeholder="Valor em real">
-        <input placeholder="Valor do dólar">
+        <input id="real" type="number" placeholder="Valor em real">
+        <input id="dolar" type="number" placeholder="Cotação do dólar">
 
-        <button>Converter</button>
+        <button onclick="converter()">Converter</button>
 
-        <script src="Script.js"></script>
+        <p id="resultado"></p>
+
+        <script src="script.js"></script>
     </div>
 </body>
 </html>
